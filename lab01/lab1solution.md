@@ -17,9 +17,9 @@ The attack pattern typically involves:
 3.  [cite_start]**Manipulating victims** into downloading an unauthorized application into the organization portal (e.g., a data loader app)[cite: 1].
 4.  [cite_start]Using the **exfiltrated data** to perform extortion, forcing victims to take certain actions[cite: 1].
 
-   **Attack Path Diagram:**
+**Attack Path Diagram:**
 
-![Diagram showing the UNC6040 attack path: Social Engineering Phone Call -> Request user credentials & Approve Salesforce Connect code -> Data Loader application added -> Data export from Salesforce environment.](images/attack-path-diagram.png)
+![Diagram showing the UNC6040 attack path: Social Engineering Phone Call -> Request user credentials & Approve Salesforce Connect code -> Data Loader application added -> Data export from Salesforce environment.](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/blob/main/lab01/attack-flow-unc6040-hardening.max-1700x1700.png?raw=true)
 
 ---
 
