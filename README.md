@@ -4,6 +4,7 @@ Hands-on labs for the AI-Enhanced Cybersecurity course, covering MITRE ATT&CK ma
 This repository contains the practical laboratory component of the AI-Enhanced Cybersecurity course designed by Dr. Andrei Kojukhov and Viacheslav Nefedov (HIT, Israel).
 
 **Students:**
+
 *-Michael Tsegaye*
 
 *-Roi Baly*
