@@ -19,7 +19,7 @@ The attack pattern typically involves:
 
    **Attack Path Diagram:**
 
-![Diagram showing the UNC6040 attack path: Social Engineering Phone Call -> Request user credentials & Approve Salesforce Connect code -> Data Loader application added -> Data export from Salesforce environment.](images/attack-path-diagram.png)
+![Diagram showing the UNC6040 attack path: Social Engineering Phone Call -> Request user credentials & Approve Salesforce Connect code -> Data Loader application added -> Data export from Salesforce environment.]([images/attack-path-diagram.png](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/blob/main/lab01/attack-flow-unc6040-hardening.max-1700x1700.png?raw=true))
 
 ---
 
