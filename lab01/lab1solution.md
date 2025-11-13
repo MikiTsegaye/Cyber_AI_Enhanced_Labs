@@ -12,7 +12,7 @@
 [cite_start]**UNC6040** is a **financially motivated threat actor** that uses spearphishing by voice to gain access to sensitive data[cite: 1]. [cite_start]With the stolen data, they perform **extortion** on several victims[cite: 1].
 
 The attack pattern typically involves:
-1.  [cite_start]**Calling employees** of large organizations[cite: 1].
+1.  **Calling employees** of large organizations[cite: 1].
 2.  [cite_start]**Impersonating IT staff** for initial access[cite: 1].
 3.  [cite_start]**Manipulating victims** into downloading an unauthorized application into the organization portal (e.g., a data loader app)[cite: 1].
 4.  [cite_start]Using the **exfiltrated data** to perform extortion, forcing victims to take certain actions[cite: 1].
