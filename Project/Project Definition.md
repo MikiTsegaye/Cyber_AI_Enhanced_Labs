@@ -45,7 +45,7 @@ The pipeline follows an unsupervised learning approach:
 
 ## 🎯 Project Scope
 
-### In Scope ✅
+### Project boundaries ✅
 * Generation of a synthetic dataset (Normal vs. Semantic Phishing).
 * Unsupervised Anomaly Detection using Reconstruction Error.
 * GPU Acceleration for embedding generation and training.
@@ -55,3 +55,4 @@ The pipeline follows an unsupervised learning approach:
 ## 🔗 References
 * [MITRE ATT&CK T1566 (Phishing)](https://attack.mitre.org/techniques/T1566/)
 * [SentenceTransformers Documentation](https://www.sbert.net/)
+
