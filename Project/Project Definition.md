@@ -55,4 +55,6 @@ The pipeline follows an unsupervised learning approach:
 ## 🔗 References
 * [MITRE ATT&CK T1566 (Phishing)](https://attack.mitre.org/techniques/T1566/)
 * [SentenceTransformers Documentation](https://www.sbert.net/)
+* [Kaggle - Database](https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset)
+
 
