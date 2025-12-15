@@ -10,6 +10,7 @@
 
 * **Michael Tsegaye**
 * **Roi Baly**
+* **Tomer Barel**
 
 ---
 
