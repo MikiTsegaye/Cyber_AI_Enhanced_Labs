@@ -19,6 +19,11 @@ The course focuses on integrating machine learning, automation, and modern secur
 
 ---
 
+## Add project overview:
+#should include: definition + goal + system architecture + workflow diagram + user instructions if needed + known limitations.
+
+---
+
 ## 🧪 Labs Completed
 
 | Lab # | Description | Link |
