@@ -20,14 +20,20 @@ The course focuses on integrating machine learning, automation, and modern secur
 ---
 
 
-## Project overview
+# Project overview
 This project implements a Proof-of-Concept (POC) offline pipeline designed to detect advanced "Spear Phishing" attacks. Unlike traditional systems that rely on signatures or blacklisted URLs, this system analyzes the actual semantic meaning of email content to identify anomalies.
 By training a deep Autoencoder on text embeddings of "normal" business communications, the model can flag semantic deviations (social engineering attempts) without requiring labeled attack data (enabling Zero-Day detection).
 
 The full project definition can be seen in this [*[link]*](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/blob/main/Project/Project%20Definition.md)
 
+## 🎯 Project Goal
+To develop an Unsupervised Zero-Day Detection System that identifies spear-phishing attempts based on semantic context rather than technical signatures.
 
-#should add: goal + system architecture + workflow diagram + user instructions if needed + known limitations.
+Primary Objective: Maintain a False Positive Rate (FPR) < 1% to ensure business continuity.
+
+Secondary Objective: Detect "Zero-Day" attacks where the malicious intent is hidden in the language (social engineering) rather than in a virus or a link.
+
+#should add: system architecture + workflow diagram + user instructions if needed + known limitations.
 
 ---
 
