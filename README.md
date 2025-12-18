@@ -41,5 +41,3 @@ You can access all labs here:
 👉 **[Click Here to Open the Labs Repository](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/tree/main/Labs)**
 
 ---
-
-## 🏗️ Repository Structure
