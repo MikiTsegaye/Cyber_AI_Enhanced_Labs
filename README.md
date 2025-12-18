@@ -24,9 +24,10 @@ The course focuses on integrating machine learning, automation, and modern secur
 This project implements a Proof-of-Concept (POC) offline pipeline designed to detect advanced "Spear Phishing" attacks. Unlike traditional systems that rely on signatures or blacklisted URLs, this system analyzes the actual semantic meaning of email content to identify anomalies.
 By training a deep Autoencoder on text embeddings of "normal" business communications, the model can flag semantic deviations (social engineering attempts) without requiring labeled attack data (enabling Zero-Day detection).
 
-The full project definition can be seen in this [*[link]**](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/blob/main/Project/Project%20Definition.md)
+The full project definition can be seen in this [*[link]*](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/blob/main/Project/Project%20Definition.md)
 
-#should include: definition + goal + system architecture + workflow diagram + user instructions if needed + known limitations.
+
+#should add: goal + system architecture + workflow diagram + user instructions if needed + known limitations.
 
 ---
 
@@ -34,8 +35,8 @@ The full project definition can be seen in this [*[link]**](https://github.com/M
 
 | Lab # | Description | Link |
 | :---: | :--- | :--- |
-| **1** | Introduction to ML-Based Threat Detection | 🔗 [*[Lab 1]**](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/tree/main/lab01) |
-| **2** | Building an AI-Driven Security Analyzer | 🔗 [*[Lab 2]**](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/tree/main/Lab02) |
+| **1** | Introduction to ML-Based Threat Detection | 🔗 [*[Lab 1]*](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/tree/main/lab01) |
+| **2** | Building an AI-Driven Security Analyzer | 🔗 [*[Lab 2]*](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/tree/main/Lab02) |
 
 ✨ **Total Labs Posted:** **2**
 
