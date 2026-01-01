@@ -1,62 +1,57 @@
-# 🛡️ Morpheus Spear Phishing Detection
-**Group 7 | NVIDIA AI-Enhanced Cybersecurity Lab**
+# 🛡️ Morpheus Spear Phishing Detection (Enron Corpus)
+**Group 7 | NVIDIA AI-Enhanced Cybersecurity Project**
 
-A GPU-accelerated anomaly detection pipeline built on the NVIDIA Morpheus framework to detect sophisticated spear-phishing attacks in the Enron email corpus.
-
----
-
-## 📖 Project Overview
-Traditional security systems rely on static signatures that modern spear-phishing attacks easily evade. This project implements an **AI-native "Morpheus" pipeline** that learns the mathematical "fingerprint" of legitimate business communication to detect anomalies.
-
-### ✨ Key Features
-* **GPU Acceleration**: Leverages **NVIDIA RTX 3050** (CUDA 12.1) for high-speed vectorization and training.
-* **SBERT Embeddings**: Uses `all-MiniLM-L6-v2` to convert unstructured email text into 384-dimensional dense vectors.
-* **Fingerprinting**: Implements a Deep **Autoencoder (AE)** trained exclusively on benign data to establish a behavioral baseline.
-* **Threshold Tuning**: Optimized detection sensitivity to maximize **Recall**, catching nearly 4x more attacks than baseline configurations.
+This project implements an AI-native cybersecurity pipeline using the **NVIDIA Morpheus** framework principles. It leverages Unsupervised Deep Learning (Autoencoders) to detect sophisticated spear-phishing attempts that bypass traditional signature-based security.
 
 ---
 
-## 🚀 Technical Workflow
-### 1. Vectorization (Digital Fingerprinting)
-We processed over **313,176 records** from the Enron dataset. Using GPU acceleration, we achieved an encoding rate of **~13.36 it/s**, reducing processing time from hours to minutes.
-
-### 2. Autoencoder Architecture
-The model uses a symmetric bottleneck architecture to compress email features into a 32-dimensional latent space:
-- **Encoder**: 384 → 128 → 64 → 32 (The Fingerprint)
-- **Decoder**: 32 → 64 → 128 → 384 (Reconstruction)
-
-### 3. Anomaly Detection Logic
-Detection is based on **Reconstruction Error (MSE)**. Legitimate emails match the fingerprint (Low Error), while spear-phishing attempts deviate (High Error).
+## 💻 Environment & Hardware
+To satisfy the computational demands of processing 400k+ records, this project utilizes dedicated GPU acceleration:
+* **GPU**: NVIDIA GeForce RTX 3050 (4GB VRAM)
+* **CUDA Version**: 12.1
+* **Compute Performance**: Achieved ~13.36 it/s during vectorization.
+* **Kernel**: Python 3.12 (Cyber_AI Environment)
 
 ---
 
-## 📊 Results & Evaluation
-Our final model was tuned from the 95th to the **70th percentile** to prioritize the detection of high-risk threats.
+## 🛠️ Technical Implementation
 
-| Metric | Initial (Strict) | Tuned (Optimized) |
+### 1. Stage 5.1: High-Speed Vectorization
+Using the `all-MiniLM-L6-v2` SentenceTransformer, we converted unstructured email text into 384-dimensional dense vectors.
+* **Training Set**: 313,176 Normal records
+* **Test Set**: 96,877 Mixed records
+
+### 2. Stage 5.2: Deep Autoencoder (Fingerprinting)
+We built a multi-layer Autoencoder to learn the mathematical "fingerprint" of legitimate Enron communication. 
+- **Architecture**: Symmetric Bottleneck (384 → 128 → 64 → 32 → 64 → 128 → 384)
+- **Training**: 20 Epochs on **Normal-only** data.
+- **Final Reconstruction Loss**: `0.001166` (Proving high-fidelity fingerprinting).
+
+### 3. Stage 5.3: Anomaly Detection & Strategic Tuning
+Detection is triggered by **Reconstruction Error (MSE)**. If an email cannot be reconstructed by the "Fingerprint," it is flagged as an anomaly.
+
+---
+
+## 📊 Final Performance Metrics (Group 7 Results)
+In accordance with the project rubric, we prioritized **Recall** (Detection Rate) to minimize **False Negatives** (Missed Attacks).
+
+| Metric | Initial (Strict 95th) | Tuned (Morpheus 70th) |
 | :--- | :--- | :--- |
 | **Recall (Detection Rate)** | 11.47% | **43.51%** |
 | **False Positive Rate (FPR)** | 2.13% | 24.01% |
 | **False Negatives (Missed)** | 26,352 | **16,816** |
 
-> **Strategic Note:** We prioritized **Recall** to minimize the "False Negative" penalty, as missing a single spear-phishing attack carries a significantly higher security cost than a false alarm.
+**Observation:** By shifting the anomaly threshold from the 95th to the 70th percentile, we successfully caught an additional **9,536 spear-phishing attempts**.
 
 ---
 
-## 🛠️ Setup & Installation
-### Prerequisites
-* **OS**: Windows 10/11
-* **Hardware**: NVIDIA GPU (RTX 30-series recommended)
-* **Environment**: Anaconda (Python 3.12)
+## 🧠 Explainable AI (xAI)
+For every alert, Morpheus provides a quantitative reason. In our model, the **MSE Anomaly Score** represents the degree of deviation from the learned business norm. 
+- **High Error**: Indicates language, urgency, or intent that does not exist in the legitimate Enron fingerprint.
 
-### Installation
-```bash
-# Create environment
-conda create -n cyber_ai python=3.12 -y
-conda activate cyber_ai
+---
 
-# Install CUDA-enabled PyTorch
-pip install torch torchvision torchaudio --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
-
-# Install requirements
-pip install sentence-transformers pandas seaborn scikit-learn
+## 📂 Project Structure
+- `05_Morpheus_Phishing_Detection_AE.ipynb`: Main modeling & tuning notebook.
+- `Splited_data/`: Cleaned and split datasets (Train/Val/Test).
+- `models/`: Saved weights for the SpearPhishingAE.
