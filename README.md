@@ -43,7 +43,9 @@ Secondary Objective: Detect "Zero-Day" attacks where the malicious intent is hid
 | :---: | :--- | :--- |
 | **1** | Introduction to ML-Based Threat Detection | 🔗 [*[Lab 1]*](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/tree/main/Labs/lab01) |
 | **2** | Building an AI-Driven Security Analyzer | 🔗 [*[Lab 2]*](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/tree/main/Labs/Lab02) |
-| **3** | Building a LLM Agent: NBA Analyst| 🔗 [*[Lab 4]*](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/tree/main/Labs/Lab04) |
+| **3** | To be added
+| **4** | Building a LLM Agent: NBA Analyst| 🔗 [*[Lab 4]*](https://github.com/MikiTsegaye/Cyber_AI_Enhanced_Labs/tree/main/Labs/Lab04) |
+| **5** | To be added
 
 ✨ **Total Labs Posted:** **3**
 
