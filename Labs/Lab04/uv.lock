@@ -616,6 +616,7 @@ dependencies = [
     { name = "agent-framework-devui" },
     { name = "nba-api" },
     { name = "openai" },
+    { name = "pandas" },
 ]
 
 [package.metadata]
@@ -624,6 +625,7 @@ requires-dist = [
     { name = "agent-framework-devui", specifier = ">=1.0.0b0" },
     { name = "nba-api" },
     { name = "openai", specifier = ">=1.50.0" },
+    { name = "pandas" },
 ]
 
 [[package]]

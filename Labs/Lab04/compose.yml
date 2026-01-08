@@ -1,5 +1,6 @@
 services:
   devui:
+    build: .
     image: cybersec-agent-devui
     container_name: cybersec-agent-devui
     working_dir: /app
