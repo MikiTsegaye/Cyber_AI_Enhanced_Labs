@@ -58,8 +58,11 @@ The system demonstrates high effectiveness in detecting standard spear phishing 
 
 
 ## Screenshots
+### --------------- Non-Anomaly ------------------
 ![Clean](screenshots/clean.png)
 
+### ----------------- Suspicious ------------------
 ![Warning](screenshots/warning.png)
 
+### ----------------- Anomaly ---------------------
 ![Blocked](screenshots/blocked.png)
